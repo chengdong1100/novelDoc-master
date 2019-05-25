@@ -1,17 +1,93 @@
 一、图书详情
+
+1. 图书详情
+连接：
+http://139.155.103.196:8080/jeesite/app/appBookDetails
+参数：
+book_id
+数据格式样例：
+{{
+	"code": 200,
+	"count": 1,
+	"data": [{
+		"book_authors": "http://localhost:85/static/shuwu/鹤阑珊",
+		"book_id": "36cf00d34e90443e8cc5de8dc2398bdf",
+		"book_name": "心学的力量",
+		"book_state": null,
+	        "book_summary": "该书通过中国古代哲学家王阳明求知格物。		 
+	        "book_url": "http://localhost:85/static/shuwu//9/36cf.zip
+                "chapters_num": 0,
+		"commnets_num": 0,
+	        "cover_url": "http://localhost:85/static/shu.png		
+		"second_catagory_name": "玄幻",
+		"star_num": 0,
+		"third_catagory_name": null,
+		"word_count": null
+	}],
+	"dayCount": null,
+	"msg": "success",
+	"pageSize": null,
+	"start": null
+}
+
+2. 评论列表
+连接：
+http://139.155.103.196:8080/jeesite/app/appBookCommentsList
+参数：
+book_id
+数据格式样例：
+{
+	"code": 200,
+	"count": 5,
+	"data": [{
+		"comments": "小说中的人物各个鲜明有个。,
+		"createtime": 1494079115000,
+		"start_level": null,
+		"user_icon": null,
+		"user_name": "1111"
+         }],
+	"dayCount": null,
+	"msg": "success",
+	"pageSize": null,
+	"start": null
+}
+
+3. 相关图书推荐
+连接：
+http://139.155.103.196:8080/jeesite/app/appBookRecommend
+参数：
+book_id
+数据格式样例：
+{
+	"code": 200,
+	"count": 4,
+	"data": [{
+		"author": "",
+		"id": "eac5e4936b6c49a5a4fe7c5d4bef9d09",
+		"img": "http://localhost:85/static/shuwu/",
+		"name": "",
+		"summary": "",
+		"word_count": null
+	}],
+	"dayCount": null,
+	"msg": "success",
+	"pageSize": null,
+	"start": null
+}
+
 4. 章节列表
 连接：
 http://139.155.103.196:8080/ jeesite/app/ appChapterLists
-参数：book_id
+参数：
+book_id
 数据格式样例：
 {
 	"code": 200,
 	"count": 1,
 	"data": [{
-		
 		"chaper_name": "第1章 死不瞑目（一）",
 		"chapter_order": "1",
-	url":"http://localhost:85/static/shuwu//9/11ba933d471b40deb82e7e1040afd4bd/152115accae2460d8088820ef239cba6/books/bbb8a8895751418382021e8a748ced82.txt"
+	         "url":"http://localhost:85/static/shuwu//9/11ba933d471.png
 	 }],
 	"dayCount": null,
 	"msg": "success",
@@ -19,11 +95,14 @@ http://139.155.103.196:8080/ jeesite/app/ appChapterLists
 	"start": null
 }
 
+
 二、评论
+
 1. 评论
 连接：
 http://139.155.103.196:8080/ jeesite/app/ appComment
-参数：book_id, content, star, uid
+参数：
+book_id, content, star, uid
 数据格式样例：
 {
 	"code": 200, (失败的话code为201)
@@ -36,10 +115,12 @@ http://139.155.103.196:8080/ jeesite/app/ appComment
 }
 
 三、音频专辑详情
+
 1. 专辑详情
 连接：
 http://139.155.103.196:8080/ jeesite/app/appAlbumDetails
-参数：book_id
+参数：
+book_id
 数据格式样例：
 {
 	"code": 200,
@@ -48,7 +129,7 @@ http://139.155.103.196:8080/ jeesite/app/appAlbumDetails
 		"album_authors": "中国结",
 		"album_name": "炮灰丑女:重生之逆袭",
 		"comment_number": 0,
-"introduce": "在很久很久以前，一只丑陋的鸭子从一个巨大的蛋壳里面钻了出来，它又大又笨拙，周围的动物看见他都驱赶它，用嘴啄它 &hellip;&hellip;\r\n&ldquo;妈妈，丑小鸭好可怜。
+                 "introduce": "在很久很久以前，一只丑陋的鸭子。
 		"program_total": 0,
 		"third_catagorythird_name": null,
 		"update_time": "2018-12-23 23:55:30.0"
@@ -62,7 +143,8 @@ http://139.155.103.196:8080/ jeesite/app/appAlbumDetails
 2. 节目
 连接：
 http://139.155.103.196:8080/ jeesite/app/appProgramList
-参数：book_id
+参数：
+book_id
 数据格式样例：
 {
 	"code": 200,
@@ -70,11 +152,11 @@ http://139.155.103.196:8080/ jeesite/app/appProgramList
 	"data": [{
 		"content": "",
 		"create_time": "2018-08-27 16:43:07.0",
-	"id": b915ff893885407e95c4703ce20f5d6a,
-		"name": null,
-"path":"http://localhost:85/static/shuwu//9/cdb609c443e440db830f5077a9b31d3e/b915ff893885407e95c4703ce20f5d6a/a26f02e586464f908b8d0095dc4801b5.mp4",
-		"size": "23678844",
-		"time_line": ""
+	         "id": b915ff893885407e95c4703ce20f5d6a,
+		 "name": null,
+                 "path":"http://localhost:85/static/shuwu//9/cdb609c443e44.mp4
+		 "size": "23678844",
+		 "time_line": ""
 	}],
 	"dayCount": null,
 	"msg": "success",
@@ -82,10 +164,12 @@ http://139.155.103.196:8080/ jeesite/app/appProgramList
 	"start": null
 }
 
+
 3. 相似
 连接：
 http://139.155.103.196:8080/ jeesite/app/appSameBookAudioList
-参数：book_id，max
+参数：
+book_id，max
 数据格式样例：
 {
 	"{
@@ -93,7 +177,8 @@ http://139.155.103.196:8080/ jeesite/app/appSameBookAudioList
 	"count": 1,
 	"data": [{
 		 "author": "1",
-"id": "fd2846df80c34efcb9930edaf2f3dcea", " img":http://localhost:85/static/shuwu//9/fd2846df80c34efcb9930edaf2f3dcea/ec0b973adc4346da9a38b0b524828358/cover.png",
+                 "id": "fd2846df80c34efcb9930edaf2f3dcea", 
+		 "img":http://localhost:85/static/shuwu//9/fd2846df80c34.png
 		 "name": "epubtushu",
 		 "summary": "",
 		 "word_count": null (如果音频集数为episodes_num)
@@ -105,10 +190,12 @@ http://139.155.103.196:8080/ jeesite/app/appSameBookAudioList
 }
 
 四、音频节目详情
+
 2. 评论列表
 连接：
 http://139.155.103.196:8080/jeesite/app/appAlbumComments
-参数：book_id
+参数：
+book_id
 数据格式样例：
 {
 	"code": 200,
@@ -119,7 +206,7 @@ http://139.155.103.196:8080/jeesite/app/appAlbumComments
 		"user_icon": "http://localhost:85/static/shuwu/null",
 		"user_id": null,
 		"user_name": null
-}],
+         }],
 	"dayCount": null,
 	"msg": "success",
 	"pageSize": null,
@@ -129,7 +216,8 @@ http://139.155.103.196:8080/jeesite/app/appAlbumComments
 3. 评论
 连接：
 http://139.155.103.196:8080/jeesite/app/ appAlbumComment
-参数：book_id, content
+参数：
+book_id, content
 数据格式样例：
 {
 	"code": 200, (失败的话code为201)
@@ -141,17 +229,13 @@ http://139.155.103.196:8080/jeesite/app/ appAlbumComment
 	"start": null
 }
 
-
-
-
-
-
-
 五、登录
+
 1.登录
 连接
 http://139.155.103.196:8080/jeesite/app/ appLogin
-参数：phone，password
+参数：
+phone，password
 数据格式样例：
 {
 	"code": 200,
@@ -192,7 +276,8 @@ http://139.155.103.196:8080/jeesite/app/ appRegister
 3.找回密码
 连接
 http://139.155.103.196:8080/jeesite/app/ appFindPassword
-参数：phone，newpassword, vaildcode
+参数：
+phone，newpassword, vaildcode
 数据格式样例：
 {
 	{
@@ -226,10 +311,12 @@ http://139.155.103.196:8080/jeesite/app/ appVerificationCode
 }}
 
 七、我的评论
+
 1.我的评论
 连接
 http://139.155.103.196:8080/jeesite/app/appMyComments
-参数：uid
+参数：
+uid
 数据格式样例：
 {
 	"code": 200,
@@ -253,14 +340,16 @@ http://139.155.103.196:8080/jeesite/app/appMyComments
 1.大家都在搜
 连接
 http://139.155.103.196:8080/jeesite/app/appGeneralSearchList
-参数：type
+参数：
+type
 数据格式样例：
 {
 	"code": 200,
 	"count": 10,
 	"data": [{
 		"author": "1",
-	"id": "fd2846df80c34efcb9930edaf2f3dcea", "img":"http://localhost:85/static/shuwu//9/fd2846df80c34efcb99  30edaf2f3dcea/ec0b973adc4346da9a38b0b524828358/cover.png
+	        "id": "fd2846df80c34efcb9930edaf2f3dcea",
+		"img":"http://localhost:85/static/shuwu//9/fd2846df80c34.png
 		"name": "epubtushu",
 		"summary": "",
 		"word_count": null (如果音频集数为episodes_num)
@@ -274,7 +363,8 @@ http://139.155.103.196:8080/jeesite/app/appGeneralSearchList
 2.搜索
 连接
 http://139.155.103.196:8080/jeesite/app/appSearchList
-参数：type，keyword
+参数：
+type，keyword
 数据格式样例：
 {
 	"code": 200,
@@ -282,9 +372,9 @@ http://139.155.103.196:8080/jeesite/app/appSearchList
 	"data": [{
 		"author": "残剑",
 		"id": "2a65267315fb49759da4e0ef481fd7e2",
-"img":"http://localhost:85/static/shuwu//9/2a65267315fb49759da4e0ef481fd7e2/a5944edc5f204c1191f65f3efccea093/cover.png?NPFW"
+                "img":"http://localhost:85/static/shuwu//9/2a65267315f.png
 		"name": "天龙剑尊",
-		"summary": "偶获华夏龙魂神血，剑尊霸体觉醒，一剑出而天下惊！\r\n曾经，他是叶族弃少，受尽冷眼与嘲笑，被家族侮辱驱逐。\r\n如今，他是一代邪龙剑尊、恶魔大帝，他魔杀天下，镇压万古八荒！\r\n\r\n仙子圣女对他又爱又恨，天骄俊才对他又敬又怕！",
+		"summary": "偶获华夏龙魂神血，剑尊霸体觉醒。
 		"word_count": null (如果音频集数为episodes_num)
 	}],
 	"dayCount": null,
@@ -294,6 +384,7 @@ http://139.155.103.196:8080/jeesite/app/appSearchList
 }
 
 九、分类
+
 1.一级分类
 连接：
 http://139.155.103.196:8080/jeesite/app/appCatagoryFirstList
@@ -319,7 +410,8 @@ http://139.155.103.196:8080/jeesite/app/appCatagoryFirstList
 2.二级分类
 连接
 http://139.155.103.196:8080/jeesite/app/appCatagorySecond_ThirdList
-参数：catagoryfirst_type
+参数：
+catagoryfirst_type
 数据格式样例：
 {
 	"code": 200,
@@ -353,18 +445,19 @@ http://139.155.103.196:8080/jeesite/app/appCatagorySecond_ThirdList
 	"pageSize": null,
 	"start": null
 }
-
 3. 书籍/音频列表
 连接
 http://139.155.103.196:8080/jeesite/app/appBook_AudioList
-参数：catagorythird_id
+参数：
+catagorythird_id
 数据格式样例：
 {
 	"code": 200,
 	"count": 7,
 	"data": [{
 		"author": "1",
-	"id": "d5dc03e2682a4151b54426a67e43b061",	 "img":"http://139.155.103.196:85/static/shuwu//9/d5dc03e2682a4151b54426a67e43b061/c9a477e762094063a9751425d6073673/cover.png?QEwX",
+	        "id": "d5dc03e2682a4151b54426a67e43b061",	
+		"img":"http://139.155.103.196:85/static/shuwu//9/d5d68.png
 		"name": "测试",
 		"summary": "",
 		"word_count": null(如果音频集数为episodes_num)
