@@ -129,8 +129,9 @@ book_id
 		"album_authors": "中国结",
 		"album_name": "炮灰丑女:重生之逆袭",
 		"comment_number": 0,
-                 "introduce": "在很久很久以前，一只丑陋的鸭子。
+                "introduce": "在很久很久以前，一只丑陋的鸭子。
 		"program_total": 0,
+		"cover_url": "http://localhost:85/static/shuwu//9/f9a7317443d95381aeea0d6dcc8/cover.png",
 		"third_catagorythird_name": null,
 		"update_time": "2018-12-23 23:55:30.0"
 	}],
