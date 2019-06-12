@@ -7,7 +7,7 @@ http://139.155.103.196:8080/jeesite/app/appBookDetails
 book_id
 数据格式样例：
 {{
-	"code": 200,
+        "code": 200,
 	"count": 1,
 	"data": [{
 		"book_authors": "http://localhost:85/static/shuwu/鹤阑珊",
@@ -22,7 +22,8 @@ book_id
 		"second_catagory_name": "玄幻",
 		"star_num": 0,
 		"third_catagory_name": null,
-		"word_count": null
+		"word_count": null,
+		"fileType":txt
 	}],
 	"dayCount": null,
 	"msg": "success",
@@ -218,7 +219,7 @@ book_id
 连接：
 http://139.155.103.196:8080/jeesite/app/ appAlbumComment
 参数：
-book_id, content
+book_id, content,uid
 数据格式样例：
 {
 	"code": 200, (失败的话code为201)
@@ -337,6 +338,23 @@ uid
 	"start": null
 }
 
+3. 删除评论
+连接：
+http://139.155.103.196:8080/jeesite/app/ appDeleteComment
+参数：
+comment_id
+数据格式样例：
+{
+	"code": 200, (失败的话code为201)
+	"count": null,
+	"data": null,
+	"dayCount": null,
+	"msg": "success",(失败的话msg为fail)
+	"pageSize": null,
+	"start": null
+}
+
+
 八、搜索
 1.大家都在搜
 连接
@@ -446,6 +464,7 @@ catagoryfirst_type
 	"pageSize": null,
 	"start": null
 }
+
 3. 书籍/音频列表
 连接
 http://139.155.103.196:8080/jeesite/app/appBook_AudioList
