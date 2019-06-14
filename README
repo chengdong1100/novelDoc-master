@@ -498,39 +498,39 @@ http://139.155.103.196:8080/jeesite/app/appIndexRecommend
 {
 	"code": 200,
 	"count": null,
-	"data": [
-		{
-		   "banner": [{
+	"banner": [{
 			"list": [{
-				"author": "333",
-				"id": "225e4ef243344e4fb270d4cbba3cf7d1",
-				"img": "http://localhost:85/static/shuwu//9/225e4ef243344e4fb270d4cbba3cf7d1/851405e15093423985c630b174b9f080/cover.png?vpRH",
-				"name": "测试epub文件地址",
-				"summary": "32523623632",
-				"word_count": 0
-			 }],
-			 "plate_id": 10
-		    }]
-		},
-	        {
-	          "今日更新": [{
-			  "list": [{
-				"author": "赫伯特&bull;诺曼",
-				"id": "18549520246b4011b79059abc1054a96",
-				"img": "http://localhost:85/static/shuwu//9/18549520246b4011b79059abc1054a96/48444af3b08f4a81b952035d335e4ef0/cover.png?Pygw",
-				"name": "日本维新史：日本明治时期的政治与经济",
-				"summary": "《日本维新史》一书从政治、经济、外交等角度梳理日本明治维新时期的历史，探讨日本如何在内忧外患的情况下，从封建国家迅速过渡到现代国家，分析日本在现代化过程中的特质及背后的原因。\r\n\r\n本书以专题式、夹叙夹议的方式展开。在分析过程中，作者既从纵向角度探讨日本的政治、文化传统对明治维新的影响，也从横向角度比较世界其他地区的反封建、反殖民革命，如与英国圈地运动、法国大革命进行对比，阐明日本资本主义发展在农村地区的特殊性，又与中国进行比较，探讨在面对西方殖民与贸易扩张时，日本与清廷在应对方式上的异同。透过比较，读者能够更好理解日本明治维新的一般性与特殊性。\r\n\r\n本书作者赫伯特˙诺曼是著名的日本史学家，长期从事日本历史的相关研究，曾任职于加拿大驻日使馆，因此本书既参考日文一手文献，也引用西方学者对明治维新的研究成果，是日本明治维新史的经典之作",
-				"word_count": 0
-			    }, {
-				"author": "残剑",
-				"id": "2a65267315fb49759da4e0ef481fd7e2",
-				"img": "http://localhost:85/static/shuwu//9/2a65267315fb49759da4e0ef481fd7e2/a5944edc5f204c1191f65f3efccea093/cover.png?NPFW",
-				"name": "天龙剑尊",
-				"summary": "偶获华夏龙魂神血，剑尊霸体觉醒，一剑出而天下惊！\r\n曾经，他是叶族弃少，受尽冷眼与嘲笑，被家族侮辱驱逐。\r\n如今，他是一代邪龙剑尊、恶魔大帝，他魔杀天下，镇压万古八荒！\r\n\r\n仙子圣女对他又爱又恨，天骄俊才对他又敬又怕！",
-				"word_count": 0
-			    }],
-			  "plate_id": 13
+				"book_id": "36cf00d34e90443e8cc5de8dc2398bdf",
+				"img_url": "http://localhost:85/static/shuwu/adicon/eb9bdac0e37043dd8ea98aad4a5f4209225201158.jpg",
+				"isAudio": "N",
+				"title": "心学的力量"
+			}, {
+				"book_id": "32da13395543415995f28c6de12e136a",
+				"img_url": "http://localhost:85/static/shuwu/adicon/eb9bdac0e37043dd8ea98aad4a5f420923141644.jpg",
+				"isAudio": "N",
+				"title": "炮灰丑女:重生之逆袭"
 			}]
+		}]
+	  }, {
+		"今日更新": [{
+			"list": [{
+				"author": "1234",
+				"id": "4d1175188f984b04a4709b6a09b461ae",
+				"img": "http://localhost:85/static/shuwu//9/4d1175188f984b04a4709b6a09b461ae/158c9ef692954dae9e725e76509dde7f/cover.png?vQOM",
+				"name": "江上如梦测试",
+				"summary": "",
+				"word_count": 0
+			}, {
+				"author": "1",
+				"id": "fd2846df80c34efcb9930edaf2f3dcea",
+				"img": "http://localhost:85/static/shuwu//9/fd2846df80c34efcb9930edaf2f3dcea/ec0b973adc4346da9a38b0b524828358/cover.png?ltIt",
+				"name": "epubtushu",
+				"summary": "",
+				"word_count": 0
+			}],
+			"plate_id": 13
+		}]
+	},
 		},
 	"dayCount": null,
 	"msg": "success",
