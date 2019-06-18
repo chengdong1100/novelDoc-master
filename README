@@ -592,13 +592,13 @@ http://139.155.103.196:8080/jeesite/app/appNews
 	"start": null
 }
 
-十二、个人信息
+十二、个人信息(有上传文件，请求方式用post)
 
 1. 头像上传
 连接：
 http://139.155.103.196:8080/jeesite/app/appUserIconUpload
 参数：
-
+file
 数据格式样例：
 {
 	"code": 200,
@@ -606,6 +606,22 @@ http://139.155.103.196:8080/jeesite/app/appUserIconUpload
 	"data": [{
 		"user_icon": "http://localhost:85/static/shuwu/appusericon/afbfda2f-fe13-4f54-aec2-a96173548a94.jpg"
 	 }],
+	"dayCount": null,
+	"msg": "success",
+	"pageSize": null,
+	"start": null
+}
+
+2. 个人信息设置（参数除了uid必传外，其它参数都是可选的）
+连接：
+http://139.155.103.196:8080/jeesite/app/appUserInfromation
+参数：
+uid,phone,nick_name,user_sex,user_prov,file
+数据格式样例：
+{
+	"code": 200,
+	"count": null,
+	"data": null,
 	"dayCount": null,
 	"msg": "success",
 	"pageSize": null,
